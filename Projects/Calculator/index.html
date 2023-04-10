@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Calc.css" />
+  </head>
+  <body align="center">
+    <h1 class="simplecalculatorheading">Simple Calculator</h1>
+    <textarea id="screen" placeholder="Enter an Expression"></textarea
+    ><br /><br />
+    <input type="button" value="Calculate" onclick="calculate()" />
+    &nbsp;&nbsp;&nbsp;
+    <input type="reset" onclick="reset()" /> &nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="backspace()" value="Backspace" />
+    <br /><br />
+    <div class="div">
+      <center>
+        <table class="table" border="3">
+          <tr>
+            <td><button onclick="one()">1</button></td>
+            <td><button onclick="two()">2</button></td>
+            <td><button onclick="three()">3</button></td>
+            <td><button onclick="plus()" class="buttons">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="four()">4</button></td>
+            <td><button onclick="five()">5</button></td>
+            <td><button onclick="six()">6</button></td>
+            <td><button onclick="minus()" class="buttons">–</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="seven()">7</button></td>
+            <td><button onclick="eight()">8</button></td>
+            <td><button onclick="nine()">9</button></td>
+            <td><button onclick="times()" class="buttons">×</button></td>
+          </tr>
+          <tr>
+            <td>
+              <button onclick="curlybracket1()" class="buttons2">(</button>
+            </td>
+            <td><button onclick="zero()">0</button></td>
+            <td>
+              <button onclick="curlybracket4()" class="buttons2">]</button>
+            </td>
+            <td><button onclick="dividedby()" class="buttons">÷</button></td>
+          </tr>
+          <tr>
+            <td>
+              <button onclick="curlybracket2()" class="buttons2">)</button>
+            </td>
+            <td><button onclick="dot()" class="buttons2">.</button></td>
+            <td>
+              <button onclick="curlybracket3()" class="buttons2">
+                <b>[</b>
+              </button>
+            </td>
+            <td>
+              <button onclick="power()" class="buttons">
+                X&nbsp;<sup><sup>y</sup></sup>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </div>
+    <br /><br />
+    Date and Time <br />
+    <progress value="0" max="100"></progress><br /><br />
+    <button type="button" onclick="display()">Display</button>
+    <button type="button" onclick="hide()">Hide</button>
+    <p id="date and time place"></p>
+    <script src="Calc.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

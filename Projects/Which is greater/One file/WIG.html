@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>WIG</title>
+    <style>
+      body,
+      html {
+        margin: 0px;
+        height: 100%;
+      }
+      
+      * {
+        font-family: serif;
+        font-weight: bold;
+        background: black;
+        color: white;
+      }
+      
+      div {
+        width: 100%;
+      }
+      
+      fieldset {
+        position: relative;
+        width: 75%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-51%, -50%);
+        text-align: center;
+        padding: 30px;
+        border-radius: 15px;
+      }
+      
+      legend {
+        border: 5px grey solid;
+        padding: 5px;
+        border-radius: 15px;
+        font-size: 1.2em;
+      }
+      
+      #a,
+      #b {
+        border: 3px inset grey;
+        border-radius: 15px;
+        padding: 7px;
+        background-color: #adadad24;
+        width: 75%;
+        text-align: center;
+        font-size: 1.1em;
+      }
+      
+      #a:focus,
+      #b:focus {
+        outline: 2px inset #900000;
+        border: 2px inset #900000;
+      }
+      
+      .p1,
+      .p2 {
+        display: inline-block;
+      }
+      
+      .p1::before {
+        content: "a";
+        color: white;
+        background-color: grey;
+        border-radius: 50%;
+        display: flex;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .p2::before {
+        content: "b";
+        color: white;
+        background-color: grey;
+        border-radius: 50%;
+        display: flex;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      button,
+      input[type="reset"] {
+        background-color: black;
+        color: white;
+        border: 6px inset #c4c4c484;
+        padding: 7px;
+        border-radius: 15px;
+      }
+      
+      button:active,
+      input[type="reset"]:active {
+        opacity: 0.5;
+      }
+      
+      #demo {
+        font-size: 1.5em;
+        color: white;
+        border-radius: 50%;
+        margin: auto;
+        width: 10%;
+      }
+      
+      #equal {
+        font-size: 1.2em;
+        color: white;
+        border-radius: 12px;
+        margin: auto;
+        width: 70%;
+      }
+      
+      img {
+        border-radius: 20px;
+        position: relative;
+        top: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIKaBqaoxOyAYemqDERqxzZC956P_uUoR6Vw&usqp=CAU"
+        width="50%"
+      />
+      <legend>Compare Numbers</legend>
+      <div>
+        <p class="p1"></p>
+        &nbsp;<input
+          type="number"
+          id="a"
+          placeholder='Type a value for "a"'
+          class="hi"
+        />
+        <br />
+        <p class="p2"></p>
+        &nbsp;<input
+          type="number"
+          id="b"
+          placeholder='Type a value for "b"'
+          class="hi"
+        />
+        <br /><br />
+        <button id="result">Which Is Greater ?</button>
+        <input type="reset" id="reset" /><br /><br />
+        <p id="demo"></p>
+        <p id="equal"></p>
+      </div>
+    </fieldset>
+    <script>
+      document.getElementById("result").onclick = function () {
+        document.getElementById("equal").innerHTML = "";
+        document.getElementById("demo").innerHTML = "";
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        if (a === "") {
+          alert('Please insert a value for "a"');
+        } else {
+          var a = Number(document.getElementById("a").value);
+          if (b === "") {
+            alert('Please insert a value for "b"');
+          } else {
+            var b = Number(document.getElementById("b").value);
+            if (a > b) {
+              document.getElementById("demo").innerHTML = "a";
+            } else {
+              if (a < b) {
+                document.getElementById("demo").innerHTML = "b";
+              } else {
+                document.getElementById("equal").innerHTML = "both are equal";
+              }
+            }
+          }
+        }
+      };
+
+      document.getElementById("reset").onclick = function () {
+        document.getElementById("a").value = "";
+        document.getElementById("b").value = "";
+        document.getElementById("demo").innerHTML = "";
+        document.getElementById("equal").innerHTML = "";
+      };
+    </script>
+  </body>
+</html>

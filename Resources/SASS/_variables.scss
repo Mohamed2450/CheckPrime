@@ -1,0 +1,47 @@
+/* Backgrounds */
+$nouvilBackground: url("Resources/images/Stars.png"),
+  linear-gradient(#200016, #10001f);
+
+/* Shadows */
+// Box Shadows
+$boxShadowRedInset: inset 0px 0px 10px #fff, inset 0px 0px 20px #ec0000,
+  inset 0px 0px 30px #ec0000;
+$boxShadowRedOutset: 0px 0px 10px #fff, 0px 0px 20px #ec0000,
+  0px 0px 30px #ec0000, 0px 0px 40px #ec0000, 0px 0px 50px #ec0000;
+
+$boxShadowGreenblueInset: inset 0px 0px 10px #fff, inset 0px 0px 20px #00ec69,
+  inset 0px 0px 30px #00ec69;
+$boxShadowGreenblueOutset: 0px 0px 10px #fff, 0px 0px 20px #00ec69,
+  0px 0px 30px #00ec69, 0px 0px 40px #00ec69, 0px 0px 50px #00ec69;
+
+$boxShadowSkyblueInset: inset 0px 0px 10px #fff, inset 0px 0px 20px #00eceb,
+  inset 0px 0px 30px #00eceb;
+$boxShadowSkyblueOutset: 0px 0px 10px #fff, 0px 0px 20px #00eceb,
+  0px 0px 30px #00eceb, 0px 0px 40px #00eceb, 0px 0px 50px #00eceb;
+
+$boxShadowPurpleInset: inset 0px 0px 10px #fff, inset 0px 0px 20px #8200ec,
+  inset 0px 0px 30px #8200ec;
+$boxShadowPurpleOutset: 0px 0px 10px #fff, 0px 0px 20px #8200ec,
+  0px 0px 30px #8200ec;
+
+// Text Shadows
+$textShadowRed: 0px 0px 10px #fff, 0px 0px 20px #ec0000, 0px 0px 30px #ec0000,
+  0px 0px 40px #ec0000, 0px 0px 50px #ec0000;
+
+$textShadowOrange: 0px 0px 10px #fff, 0px 0px 20px #ec7800, 0px 0px 30px #ec7800,
+  0px 0px 40px #ec7800, 0px 0px 50px #ec7800;
+
+$textShadowYellow: 0px 0px 10px #fff, 0px 0px 20px #e9ec00, 0px 0px 30px #e9ec00,
+  0px 0px 40px #e9ec00, 0px 0px 50px #e9ec00;
+
+$textShadowGreen: 0px 0px 10px #fff, 0px 0px 20px #07ec00, 0px 0px 30px #07ec00,
+  0px 0px 40px #07ec00, 0px 0px 50px #07ec00;
+
+$textShadowBlue: 0px 0px 10px #fff, 0px 0px 20px #0028ec, 0px 0px 30px #0028ec,
+  0px 0px 40px #0028ec, 0px 0px 50px #0028ec;
+
+$textShadowSkyblue: 0px 0px 10px #fff, 0px 0px 20px #00eceb,
+  0px 0px 30px #00eceb, 0px 0px 40px #00eceb, 0px 0px 50px #00eceb;
+
+$textShadowPurple: 0px 0px 10px #fff, 0px 0px 20px #8200ec, 0px 0px 30px #8200ec,
+  0px 0px 40px #8200ec, 0px 0px 50px #8200ec;

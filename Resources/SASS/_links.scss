@@ -1,0 +1,25 @@
+a:link,
+a:visited {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
+.a:link,
+.a:visited,
+label {
+  text-decoration: none;
+  background: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
+  transition: background 0.16s, color 0.16s;
+}
+.a:hover,
+.a:active,
+label:hover,
+label:active {
+  background: white;
+  color: black;
+}

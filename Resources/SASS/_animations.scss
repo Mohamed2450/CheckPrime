@@ -1,0 +1,26 @@
+@keyframes TextShadow {
+  0% {
+    text-shadow: $textShadowRed;
+  }
+  14.2% {
+    text-shadow: $textShadowOrange;
+  }
+  28.4% {
+    text-shadow: $textShadowYellow;
+  }
+  42.6% {
+    text-shadow: $textShadowGreen;
+  }
+  56.8% {
+    text-shadow: $textShadowBlue;
+  }
+  71% {
+    text-shadow: $textShadowSkyblue;
+  }
+  85.2% {
+    text-shadow: $textShadowPurple;
+  }
+  100% {
+    text-shadow: $textShadowRed;
+  }
+}
