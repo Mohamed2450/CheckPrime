@@ -1,0 +1,86 @@
+/* Backgrounds */
+/* Shadows */
+body,
+html {
+  margin: 0;
+  height: calc(100% - 10px);
+  background: url("Resources/images/Stars.png"), linear-gradient(#200016, #10001f);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  margin-right: 10px;
+}
+
+.a:link,
+.a:visited,
+label {
+  text-decoration: none;
+  background: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
+  transition: background 0.16s, color 0.16s;
+}
+
+.a:hover,
+.a:active,
+label:hover,
+label:active {
+  background: white;
+  color: black;
+}
+
+button {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  background: transparent;
+  padding: 10px;
+  border: white 2px solid;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 10px #fff, inset 0px 0px 20px #8200ec, inset 0px 0px 30px #8200ec;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+button:hover,
+button:active {
+  box-shadow: inset 0px 0px 10px #fff, inset 0px 0px 20px #8200ec, inset 0px 0px 30px #8200ec, 0px 0px 10px #fff, 0px 0px 20px #8200ec, 0px 0px 30px #8200ec, 0px 0px 40px #8200ec, 0px 0px 50px #8200ec;
+  text-shadow: 0px 0px 10px #fff, 0px 0px 20px #8200ec, 0px 0px 30px #8200ec, 0px 0px 40px #8200ec, 0px 0px 50px #8200ec;
+}
+
+.glow:checked ~ a button {
+  box-shadow: inset 0px 0px 10px #fff, inset 0px 0px 20px #8200ec, inset 0px 0px 30px #8200ec, 0px 0px 10px #fff, 0px 0px 20px #8200ec, 0px 0px 30px #8200ec, 0px 0px 40px #8200ec, 0px 0px 50px #8200ec;
+  text-shadow: 0px 0px 10px #fff, 0px 0px 20px #8200ec, 0px 0px 30px #8200ec, 0px 0px 40px #8200ec, 0px 0px 50px #8200ec;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+img {
+  border-radius: 50%;
+  width: 13%;
+}
+
+
+
+/*# sourceMappingURL=main.css.map */
