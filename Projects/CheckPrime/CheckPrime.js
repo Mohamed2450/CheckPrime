@@ -24,7 +24,7 @@ function checkPrime() {
         }
         if (isPrime) {
           document.getElementById("result").innerHTML = "Prime";
-          document.getElementById("result").style.backgroundColor = "green";
+          document.getElementById("result").style.backgroundColor = "#00a562";
         } else {
           document.getElementById("result").innerHTML = "Not Prime";
           document.getElementById("result").style.backgroundColor = "red";
